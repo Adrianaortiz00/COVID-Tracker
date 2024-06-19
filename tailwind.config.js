@@ -6,6 +6,7 @@ export default {
       colors: {
         'blue': '#1fb6ff',
         'purple': '#7e5bef',
+        'dark-purple':'#2e1065',
         'pink': '#ff49db',
         'orange': '#ff7849',
         'green': '#13ce66',
