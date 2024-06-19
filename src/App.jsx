@@ -1,10 +1,10 @@
 import React from "react";
-import TextHome from "./components/home/TextoHome";
+import Hero from "./components/home/Hero";
 
 const App = () => {
   return (
     <div className=" bg-indigo-950">
-      <TextHome/>
+      <Hero/>
     </div>
   );
 };
