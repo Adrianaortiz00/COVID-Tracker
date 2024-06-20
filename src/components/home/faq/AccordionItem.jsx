@@ -21,7 +21,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }) => {
               : { height: "0px" }
           }
         >
-          <p className="font-regular text-lg pt-4 pb-10">{answer}</p>
+          <p className="font-medium text-m pt-4 pb-10">{answer}</p>
         </div>
       </div>
   )
