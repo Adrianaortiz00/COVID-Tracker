@@ -21,10 +21,7 @@ export default {
         'gray-light': '#d3dce6',
       },
       fontFamily: {
-        fontAwesome: ["fontAwesome", "sans-serif"],
-        halflings: ["halflings", "sans-serif"],
-        lanenarLane: ["lanenarLane", "sans-serif"],
-        themify: ["themify", "sans-serif"],
+        poppins: ['Poppins', 'sans-serif'],
       },
       fontSize:{
         sm: '0.8rem',

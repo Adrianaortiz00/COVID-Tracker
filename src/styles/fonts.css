@@ -1,28 +1,42 @@
-/* src/styles/fonts.css */
 @font-face {
-    font-family: 'fontAwesome';
-    src: url('../assets/fonts/FontAwesome-Regular.ttf') format('truetype');
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
+/* Medium */
 @font-face {
-    font-family: 'halflings';
-    src: url('../assets/fonts/Halflings-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Poppins';
+    src: url('../assets\fonts\Poppins-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
 }
 
+/* SemiBold */
 @font-face {
-    font-family: 'lanenarLane';
-    src: url('../assets/fonts/LanenarLane-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Poppins';
+    src: url('../assets\fonts\Poppins-SemiBold.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
 }
 
+/* Bold */
 @font-face {
-    font-family: 'themify';
-    src: url('../assets/fonts/Themify-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Poppins';
+    src: url('../assets\fonts\Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
     font-style: normal;
+}
+
+/* ExtraBold */
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+:root {
+    --font-poppins: 'Poppins', sans-serif;
 }
