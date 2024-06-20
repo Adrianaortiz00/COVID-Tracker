@@ -1,4 +1,3 @@
-
 const CardSponsors = () => {
     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-lg shadow-lg z-20">
         <div className="flex justify-center items-center space-x-4">
