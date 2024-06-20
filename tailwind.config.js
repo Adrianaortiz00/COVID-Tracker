@@ -4,7 +4,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        'gray-super-light':'#ddd' ,
         'blue': '#1fb6ff',
+        'blue-footer':'#1b2a4e',
+        'dark-blue-1':'#121158',
+        'dark-blue-2':'#171133',
+        'purple-blue': '#3639ae',
         'purple': '#7e5bef',
         'dark-purple':'#2e1065',
         'pink': '#ff49db',
