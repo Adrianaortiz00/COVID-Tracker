@@ -9,7 +9,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }) => {
           className={`question-container ${isOpen ? "active" : ""}`}
           onClick={onClick}
         >
-          <p className="text-left font-bold text-xl cursor-pointer py-5">{question}</p>
+          <p className="text-left font-semibold text-xl cursor-pointer py-5">{question}</p>
         </button>
 
         <div
@@ -21,7 +21,7 @@ const AccordionItem = ({ question, answer, isOpen, onClick }) => {
               : { height: "0px" }
           }
         >
-          <p className="text-lg pt-4 pb-10">{answer}</p>
+          <p className="font-regular text-lg pt-4 pb-10">{answer}</p>
         </div>
       </div>
   )
