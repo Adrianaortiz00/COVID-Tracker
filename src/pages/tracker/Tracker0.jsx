@@ -1,4 +1,4 @@
-const TrackerStatistics = () => {
+const Tracker0 = () => {
   return (
     <div>
       <h1>Tracker statistics</h1>
@@ -6,4 +6,4 @@ const TrackerStatistics = () => {
   );
 };
 
-export default TrackerStatistics;
+export default Tracker0;

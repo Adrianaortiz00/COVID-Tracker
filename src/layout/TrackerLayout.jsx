@@ -4,7 +4,7 @@ const TrackerLayout = () => {
   return (
     <div>
       <div>
-        <Link to="world">World</Link>
+        <Link to="/">Home</Link>
       </div>
       <Outlet />
     </div>
