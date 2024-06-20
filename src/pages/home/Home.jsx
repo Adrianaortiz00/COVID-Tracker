@@ -1,7 +1,13 @@
+import Hero from "../../components/home/Hero";
+import CardSponsors from "../../components/home/CardSponsors";
+import StaySection from "../../components/home/StaySection";
+
 const Home = () => {
   return (
     <div>
-      <h1>Home Page</h1>
+      <Hero/>
+      <StaySection/>
+      <CardSponsors/>
     </div>
   );
 };

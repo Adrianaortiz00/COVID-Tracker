@@ -21,6 +21,7 @@ export default {
         'gray-light': '#d3dce6',
       },
       fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
         fontAwesome: ["fontAwesome", "sans-serif"],
         halflings: ["halflings", "sans-serif"],
         lanenarLane: ["lanenarLane", "sans-serif"],
