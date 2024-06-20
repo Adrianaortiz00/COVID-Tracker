@@ -19,6 +19,9 @@ export default {
         'gray-dark': '#273444',
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
+        'red': '#ff0000',
+        'redark': '#b70202',
+        'defult': '#3639AE'
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
