@@ -37,6 +37,30 @@
     font-style: normal;
 }
 
-:root {
-    --font-poppins: 'Poppins', sans-serif;
+@font-face {
+    font-family: 'fontAwesome';
+    src: url('../assets/fonts/FontAwesome-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'halflings';
+    src: url('../assets/fonts/Halflings-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lanenarLane';
+    src: url('../assets/fonts/LanenarLane-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'themify';
+    src: url('../assets/fonts/Themify-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

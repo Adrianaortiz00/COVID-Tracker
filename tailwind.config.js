@@ -22,6 +22,10 @@ export default {
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        fontAwesome: ["fontAwesome", "sans-serif"],
+        halflings: ["halflings", "sans-serif"],
+        lanenarLane: ["lanenarLane", "sans-serif"],
+        themify: ["themify", "sans-serif"],
       },
       fontSize:{
         sm: '0.8rem',
