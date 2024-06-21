@@ -1,15 +1,19 @@
 import PropTypes from "prop-types";
 
-const Button = ({ buttonText, buttonStyle }) => {
-    return (
-        <button className={`${buttonStyle} w-56 h-[5em] text-[0.7em] font-semibold font-poppins py-2 px-4 mt-[2em] mb-8 `} >{buttonText} </button>
-    )
-}
+const Button = ({ children, buttonStyle, navbar }) => {
+  return (
+    <button
+      className={`${buttonStyle}, ${
+        { navbar } ? "" : "w-56 h-[5em] text-[0.7em] font-semibold font-poppins py-2 px-4"
+      }`}
+    >
+      {children}
+    </button>
+  );
+};
 Button.propTypes = {
-    buttonText: PropTypes.string,
-    buttonStyle: PropTypes.string,
+  buttonText: PropTypes.string,
+  buttonStyle: PropTypes.string,
 };
 
-
-
-export default Button
+export default Button;
