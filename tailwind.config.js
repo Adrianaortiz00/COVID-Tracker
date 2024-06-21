@@ -35,8 +35,28 @@ export default {
         '3xl': '1.953rem',
         '4xl': '2.441rem',
         '5xl': '3.052rem',
-      }
+      },
+
+
+       opacity: {
+            '70': '0.7',
+            '50': '0.5',
+          },
+          scale: {
+            '95': '0.95',
+            '90': '0.9',
+          },
+          transitionProperty: {
+            'opacity-transform': 'opacity, transform',
+          },
+          transitionDuration: {
+            '500': '500ms',
+          },
+        },
     },
-  },
+
+
+
+  
   plugins: [],
 };
