@@ -17,11 +17,12 @@ export default {
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
         'red': '#ff0000',
-        'redark': '#b70202',
-        'defult': '#3639AE',
+        'dark-red': '#b70202',
         'orange': '#ff6a07',
         'green': '#82c519',
-        'blue': '#2c6dff'
+        'blue': '#2c6dff',
+        'darker-blue': '#3639AE',
+
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
