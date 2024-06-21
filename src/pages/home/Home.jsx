@@ -1,11 +1,12 @@
 import Hero from "../../components/home/Hero";
 import StaySection from "../../components/home/StaySection";
+import Faq from "../../components/home/faq/Faq"
 import MetricsSection from "../../components/home/MetricsSection";
-import Faq from "../../components/home/Faq"
+
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-dark-blue-2">
       <Hero/>
       <StaySection/>
       <MetricsSection/>
