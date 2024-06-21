@@ -9,6 +9,10 @@ const Tracker1 = () => {
     return <div>Loading...</div>;
   }
 
+  const handleCountryChange = (country) => {
+    alert(country);
+  }
+
   const { cases, deaths, recovered, active, todayCases, todayDeaths, updated } = data;
   const updateDate = new Date(updated).toLocaleDateString("en-US", {month: 'long', day: 'numeric', year: 'numeric'});
   const stats = [
@@ -23,7 +27,7 @@ const Tracker1 = () => {
   return (
     <article className="bg-gray-super-light p-5 ">
       <section className="top flex justify-between">
-        <SelectCountry />
+        <SelectCountry onChange={handleCountryChange}/>
         <p className="font-medium">Updated: {updateDate}</p>
       </section>
       <section className="cards grid grid-cols-2 gap-1 w-[65%]">
