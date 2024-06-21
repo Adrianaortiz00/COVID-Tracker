@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'gray-super-light':'#ddd' ,
-        'blue': '#1fb6ff',
+        'gray-super-light':'#ddd',
         'blue-footer':'#1b2a4e',
         'dark-blue-1':'#121158',
         'dark-blue-2':'#171133',
@@ -13,12 +12,16 @@ export default {
         'purple': '#7e5bef',
         'dark-purple':'#2e1065',
         'pink': '#ff49db',
-        'orange': '#ff7849',
-        'green': '#13ce66',
         'yellow': '#ffc82c',
         'gray-dark': '#273444',
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
+        'red': '#ff0000',
+        'redark': '#b70202',
+        'defult': '#3639AE',
+        'orange': '#ff6a07',
+        'green': '#82c519',
+        'blue': '#2c6dff'
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -37,6 +40,9 @@ export default {
         '5xl': '3.052rem',
       },
 
+      animation: {
+        'spin-slow': 'spin 5s linear infinite forwards',
+      },
 
        opacity: {
             '70': '0.7',
@@ -54,9 +60,4 @@ export default {
           },
         },
     },
-
-
-
-  
-  plugins: [],
 };
