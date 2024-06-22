@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import useCountriesData from "../../services/useCountriesData";
 
-const SelectCountry = ( onChange ) => {
+const SelectCountry = ( { onChange } ) => {
   const { data } = useCountriesData();
 
   const handleChange = (e) => {
@@ -9,8 +9,7 @@ const SelectCountry = ( onChange ) => {
   };
 
   return (
-    <select name="country" id="country" onChange={handleChange} className="font-light">
-      <option value="all">All</option>
+    <select name="country" id="country" onChange={handleChange} className="font-medium p-3 bg-white">
       {data?.map((country, index) => (
         <option key={index} value={country.country}>
           {country.country}

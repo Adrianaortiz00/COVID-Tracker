@@ -11,7 +11,7 @@ const CardVirus = ({data, color}) => {
   }
   
   return (
-    <div className="card group overflow-hidden bg-white w-[285px] mb-6 font-bold text-[1.1250em] relative">
+    <div className="card group overflow-hidden bg-white w-[285px] mb-6 font-bold text-[1.1250em] relative transition ease hover:-translate-y-3 duration-500">
       <div className="title">
         <h5 className="font-medium px-5 py-3 border-b-[1px] border-gray-super-light capitalize">{data.label}</h5>
       </div>
