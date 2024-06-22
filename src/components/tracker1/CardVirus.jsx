@@ -3,8 +3,8 @@ const CardVirus = ({data, color}) => {
 
   const colorVariants = {
     'red': 'text-red',
-    'redark': 'text-redark',
-    'defult': 'text-defult',
+    'redark': 'text-dark-red',
+    'defult': 'text-darker-blue',
     'orange': 'text-orange',
     'green': 'text-green',
     'blue': 'text-blue'

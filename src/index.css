@@ -1,6 +1,12 @@
 @import './styles/fonts.css';
 @import '@icon/themify-icons/themify-icons.css';
+<<<<<<< HEAD
+
+=======
+>>>>>>> c355820738c3eb0f8f9fff81a6ac336614fe2d68
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+

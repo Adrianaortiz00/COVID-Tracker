@@ -17,11 +17,12 @@ export default {
         'gray': '#8492a6',
         'gray-light': '#d3dce6',
         'red': '#ff0000',
-        'redark': '#b70202',
-        'defult': '#3639AE',
+        'dark-red': '#b70202',
         'orange': '#ff6a07',
         'green': '#82c519',
-        'blue': '#2c6dff'
+        'blue': '#2c6dff',
+        'darker-blue': '#3639AE',
+
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
@@ -39,10 +40,25 @@ export default {
         '4xl': '2.441rem',
         '5xl': '3.052rem',
       },
+
       animation: {
         'spin-slow': 'spin 5s linear infinite forwards',
-      }
+      },
+
+       opacity: {
+            '70': '0.7',
+            '50': '0.5',
+          },
+          scale: {
+            '95': '0.95',
+            '90': '0.9',
+          },
+          transitionProperty: {
+            'opacity-transform': 'opacity, transform',
+          },
+          transitionDuration: {
+            '500': '500ms',
+          },
+        },
     },
-  },
-  plugins: [],
 };
