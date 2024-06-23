@@ -1,41 +1,34 @@
-import CardVirus from "../../components/tracker1/CardVirus";
+import { useState } from 'react';
+import useOneCountryData from '../../services/useOneCountryData';
 import SelectCountry from "../../components/tracker1/SelectCountry";
-import useGlobalData from "../../services/useGlobalData";
+import CardGroup from '../../components/tracker1/CardGroup';
 
 const Tracker1 = () => {
-  const { data } = useGlobalData();
-
-  if (data === null) {
-    return <div>Loading...</div>;
-  }
+  const [selectedCountry, setSelectedCountry] = useState('Afghanistan');
+  const {data} = useOneCountryData(selectedCountry);
 
   const handleCountryChange = (country) => {
-    alert(country);
+    setSelectedCountry(country);
   }
 
-  const { cases, deaths, recovered, active, todayCases, todayDeaths, updated } = data;
+  if ( data == null ) {
+    return <div className='container m-auto w-full'><h2>Loading...</h2></div>;
+  }
+
+  if (!data) {
+    return <div>Sorry, no data found.</div>;
+  }
+  
+  let { updated } = data;
   const updateDate = new Date(updated).toLocaleDateString("en-US", {month: 'long', day: 'numeric', year: 'numeric'});
-  const stats = [
-    { label: "Total Cases", value: cases },
-    { label: "Total Deaths", value: deaths },
-    { label: "Total Recovered", value: recovered },
-    { label: "Total Active", value: active },
-    { label: "New Cases", value: todayCases },
-    { label: "New Deaths", value: todayDeaths }
-  ];
-  const colors = ["defult","red","green","blue","orange","redark"]
+
   return (
-    <article className="bg-gray-super-light p-5 ">
-      <section className="top flex justify-between">
+    <article className="p-5 bg-[#F7F8FC] text-gray-dark">
+      <section className="select-section flex justify-between mb-8 pb-4 border-gray-light border-b">
         <SelectCountry onChange={handleCountryChange}/>
         <p className="font-medium">Updated: {updateDate}</p>
       </section>
-      <section className="cards grid grid-cols-2 gap-1 w-[65%]">
-        {stats.map((stat, index) => (
-          <CardVirus key={index} data={stat} color={colors[index]}/>
-        ))}
-      </section>
-      <section></section>
+    <CardGroup data={data}/>
     </article>
   );
 };
