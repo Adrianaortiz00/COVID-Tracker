@@ -1,9 +1,5 @@
 @import './styles/fonts.css';
-<<<<<<< HEAD
 @import '@icon/themify-icons/themify-icons.css';
-=======
-/* @import '@icon/themify-icons/themify-icons.css'; */
->>>>>>> c45a5225afa76935f26e80fd2db7592f402c21fe
 
 @tailwind base;
 @tailwind components;
