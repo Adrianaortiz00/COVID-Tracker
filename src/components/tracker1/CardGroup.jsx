@@ -14,7 +14,7 @@ const CardGroup = ( { data }) => {
   const colors = ["defult","red","green","blue","orange","redark"]
 
   return (
-    <section className="cards grid grid-cols-2 gap-1 w-[65%]">
+    <section className="cards flex gap-9 w-[65%] flex-wrap">
     {stats.map((stat, index) => (
       <CardVirus key={index} data={stat} color={colors[index]}/>
     ))}

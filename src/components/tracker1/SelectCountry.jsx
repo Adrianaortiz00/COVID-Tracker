@@ -9,7 +9,7 @@ const SelectCountry = ( { onChange } ) => {
   };
 
   return (
-    <select name="country" id="country" onChange={handleChange} className="font-medium p-3 bg-white">
+    <select name="country" id="country" onChange={handleChange} className="font-medium px-9 py-3 bg-white rounded">
       {data?.map((country, index) => (
         <option key={index} value={country.country}>
           {country.country}

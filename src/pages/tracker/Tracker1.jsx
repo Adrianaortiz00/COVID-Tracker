@@ -23,7 +23,7 @@ const Tracker1 = () => {
   const updateDate = new Date(updated).toLocaleDateString("en-US", {month: 'long', day: 'numeric', year: 'numeric'});
 
   return (
-    <article className="p-5 bg-[#F7F8FC]">
+    <article className="p-5 bg-[#F7F8FC] text-gray-dark">
       <section className="select-section flex justify-between mb-8 pb-4 border-gray-light border-b">
         <SelectCountry onChange={handleCountryChange}/>
         <p className="font-medium">Updated: {updateDate}</p>
