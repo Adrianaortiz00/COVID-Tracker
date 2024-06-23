@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import useOneCountryData from '../../services/useOneCountryData';
 import SelectCountry from "../../components/tracker1/SelectCountry";
-import CardGroup from '../../components/tracker1/CardGroup';
+import CardGroup from '../../components/tracker/CardGroup';
+import GlobalDataCards from '../../components/tracker1/GlobalDataCards';
 
 const Tracker1 = () => {
   const [selectedCountry, setSelectedCountry] = useState('Afghanistan');
@@ -24,11 +25,12 @@ const Tracker1 = () => {
 
   return (
     <article className="p-5 bg-[#F7F8FC] text-gray-dark">
-      <section className="select-section flex justify-between mb-8 pb-4 border-gray-light border-b">
+      <section className="select-section flex justify-between items-center mb-8 pb-4 border-gray-light border-b">
         <SelectCountry onChange={handleCountryChange}/>
         <p className="font-medium">Updated: {updateDate}</p>
       </section>
     <CardGroup data={data}/>
+    <GlobalDataCards/>
     </article>
   );
 };
