@@ -12,7 +12,7 @@ const GlobalDataCards = () => {
   const { cases, recovered, deaths, todayDeaths } = globalData;
   const stats = [cases, recovered, deaths, todayDeaths];
   return (
-    <section className="my-10 flex gap-1">
+    <section className="my-10 flex flex-wrap gap-1">
       {stats?.map((stat, index) => (
         <CardGlobal key={index} icon={cardLabels[index].icon} title={cardLabels[index].label} data={stat}/>
       ))}
