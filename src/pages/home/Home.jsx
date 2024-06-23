@@ -1,8 +1,8 @@
-import Hero from "../../components/home/Hero";
-import StaySection from "../../components/home/StaySection";
-import Carousel from "../../components/home/Carousel";
-import Faq from "../../components/home/faq/Faq"
-import MetricsSection from "../../components/home/MetricsSection";
+import Hero from "../home/sections/Hero";
+import StaySection from "../home/sections/StaySection";
+import Carousel from "../home/sections/Carousel";
+import Faq from "../home/sections/Faq"
+import MetricsSection from "../home/sections/MetricsSection";
 
 
 const Home = () => {
