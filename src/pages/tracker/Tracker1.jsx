@@ -29,7 +29,10 @@ const Tracker1 = () => {
         <SelectCountry onChange={handleCountryChange}/>
         <p className="font-medium">Updated: {updateDate}</p>
       </section>
-    <CardGroup data={data}/>
+      <section className='center-section flex'>
+        <CardGroup data={data}/>
+        <img src="/assets/images/map-mock.png" alt="map" />
+      </section>
     <GlobalDataCards/>
     </article>
   );
