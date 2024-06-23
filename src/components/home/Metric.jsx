@@ -12,7 +12,7 @@ const Metric = ({ iconMetric, metric, subtitleMetric }) => {
     )
 }
 
-Metric.protoType = {
+Metric.propTypes = {
     iconMetric: PropTypes.string,
     metric: PropTypes.string,
     subtitleMetric: PropTypes.string,
