@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import accordionData  from "../../../data/accordionData"
-import AccordionItem from "./AccordionItem";
+import AccordionItem from "../../../components/home/AccordionItem";
 
 const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);

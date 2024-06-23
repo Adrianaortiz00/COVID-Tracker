@@ -1,4 +1,4 @@
-import TextHome from "./TextHome"
+import TextHome from "../../../components/home/TextHome"
 
 const Hero = () => {
     return (
