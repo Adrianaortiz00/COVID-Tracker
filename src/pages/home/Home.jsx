@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div className="bg-dark-blue-2">
       <Hero/>
-      <StaySection/>
       <Carousel/>
+      <StaySection/>
       <MetricsSection/>
       <Faq/>
     </div>
