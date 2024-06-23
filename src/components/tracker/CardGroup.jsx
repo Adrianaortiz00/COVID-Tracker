@@ -1,4 +1,4 @@
-import CardVirus from "../../components/tracker1/CardVirus";
+import CardVirus from "./CardVirus";
 import { PropTypes } from "prop-types";
 
 const CardGroup = ( { data }) => {
