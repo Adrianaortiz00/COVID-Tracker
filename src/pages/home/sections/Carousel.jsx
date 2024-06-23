@@ -1,4 +1,7 @@
-import { useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
+import carouselData from '../../../data/dataCarousel';
+import '../../../styles/fonts.css';
+import '../../../index.css';
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
