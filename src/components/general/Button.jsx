@@ -10,6 +10,4 @@ Button.propTypes = {
     buttonStyle: PropTypes.string,
 };
 
-
-
-export default Button
+export default Button;

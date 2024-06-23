@@ -1,7 +1,11 @@
+<<<<<<< HEAD:src/components/home/Carousel.jsx
 import React, { useState, useRef } from 'react';
 import carouselData from '../../data/dataCarousel';
 import '../../styles/fonts.css';
 import '../../index.css';
+=======
+import { useState, useRef } from 'react';
+>>>>>>> c45a5225afa76935f26e80fd2db7592f402c21fe:src/pages/home/sections/Carousel.jsx
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

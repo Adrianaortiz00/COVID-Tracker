@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Button from "./Button";
+import Button from "../general/Button";
 
 function TextHome({ title, text, buttonText, buttonStyle }) {
     return (

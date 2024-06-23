@@ -1,4 +1,4 @@
-import Metric from "./Metric"
+import Metric from "../../../components/home/Metric"
 
 const MetricsSection = () => {
     return (
