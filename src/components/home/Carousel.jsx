@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
-import '../../styles/fonts.css';
-import '../../index.css';
+//import '../../styles/fonts.css';
+//import '../../index.css';
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
