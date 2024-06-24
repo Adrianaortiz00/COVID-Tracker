@@ -94,7 +94,7 @@ const Carousel = () => {
           <div className="flex  justify-center">
             <div className="text-center">
               <h5 className="has-animation font-poppins-sans-serif text-[18px] text-white pt-[3em] ml-[3em] line-clamp-6 " data-delay="0">App Feature</h5>
-              <h2 className="has-animation font-poppins leading-[1em] text-[3.438em] text-white font-black pt-[0.5em] ml-[3em] line-clamp-5 w-[48.085em] h-[3.125em]" data-delay="50">Basic Feature You Will Get When You Use</h2>
+              <h2 className="has-animation font-poppins leading-[1em] text-[3.438em] text-white font-black pt-[0.5em] line-clamp-5 w-[48.085em] h-[3.125em]" data-delay="50">Basic Feature You <br /> Will Get When You Use</h2>
             </div>
           </div>
         </div>
