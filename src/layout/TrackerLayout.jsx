@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
+import Tracker0 from "../pages/tracker/sections/Tracker0";
 
 const TrackerLayout = () => {
   return (
@@ -6,7 +7,10 @@ const TrackerLayout = () => {
       <div>
         <Link to="/">Home</Link>
       </div>
-      <Outlet />
+      <div className="flex">
+        <Tracker0 />
+        <Outlet />
+      </div>
     </div>
   );
 };
