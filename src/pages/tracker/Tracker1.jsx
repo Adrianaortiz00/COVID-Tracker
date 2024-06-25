@@ -1,12 +1,12 @@
 import { useState } from 'react';
-import useOneCountryData from '../../services/useOneCountryData';
 import SelectCountry from "../../components/tracker1/SelectCountry";
 import CardGroup from '../../components/tracker/CardGroup';
 import GlobalDataCards from '../../components/tracker1/GlobalDataCards';
+import useGlobalData from "../../services/useGlobalData";
 
 const Tracker1 = () => {
   const [selectedCountry, setSelectedCountry] = useState('Afghanistan');
-  const {data} = useOneCountryData(selectedCountry);
+  const data = useGlobalData();
 
   const handleCountryChange = (country) => {
     setSelectedCountry(country);
@@ -30,10 +30,10 @@ const Tracker1 = () => {
         <p className="font-medium">Updated: {updateDate}</p>
       </section>
       <section className='center-section flex'>
-        <CardGroup data={data}/>
+        <CardGroup country={selectedCountry}/>
         <img src="/assets/images/map-mock.png" alt="map" />
       </section>
-    <GlobalDataCards/>
+    <GlobalDataCards data={data}/>
     </article>
   );
 };

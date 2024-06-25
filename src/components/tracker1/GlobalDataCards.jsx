@@ -1,15 +1,9 @@
 import CardGlobal from "./CardGlobal"
-import useGlobalData from "../../services/useGlobalData";
-import cardLabels from "../../data/tracker1GlobalCards"
+import cardLabels from "../../data/tracker1GlobalCards";
+import { PropTypes } from "prop-types";
 
-const GlobalDataCards = () => {
-  const globalData   = useGlobalData().data;
-
-  if ( globalData == null ) {
-    return <div className='container m-auto w-full'><h2>Loading...</h2></div>;
-  }
-
-  const { cases, recovered, deaths, todayDeaths } = globalData;
+const GlobalDataCards = ( { data } ) => {
+  const { cases, recovered, deaths, todayDeaths } = data;
   const stats = [cases, recovered, deaths, todayDeaths];
   return (
     <section className="my-10 flex flex-wrap gap-1">
@@ -20,5 +14,9 @@ const GlobalDataCards = () => {
     </section>
   )
 }
+
+GlobalDataCards.propTypes = {
+  data: PropTypes.object
+};
 
 export default GlobalDataCards;

@@ -6,7 +6,7 @@ const TrackerLayout = () => {
       <div>
         <Link to="/">Home</Link>
       </div>
-      <Outlet />
+      <Outlet className="bg-[#F7F8FC]" />
     </div>
   );
 };
