@@ -4,10 +4,10 @@ import Sidebar from "../components/sidebar/Sidebar";
 
 const TrackerLayout = () => {
   return (
-    <div className="flex">
+    <div className="flex font-poppins">
       <Sidebar />
       <Tracker0 />
-      <Outlet />
+      <Outlet className="bg-[#F7F8FC]" />
     </div>
   );
 };

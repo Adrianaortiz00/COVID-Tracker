@@ -58,6 +58,9 @@ export default {
       transitionDuration: {
         500: "500ms",
       },
+      backgroundImage: {
+        "custom-gradient": "linear-gradient(to right, #1e0c9d, #06cdec)",
+      },
     },
   },
 };
