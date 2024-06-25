@@ -15,7 +15,7 @@ const CarouselItem = ({ item, index, currentIndex }) => {
   return (
     <div
       key={index}
-      className={`symptom-content has-animation flex-shrink-0 px-4 rounded-lg transition-opacity-transform duration-500 bg-[#fff] shadow-[0px_30px_60px_rgba(160,159,202,0.45)] w-[380px] h-[300px] mr-[25px] mt-[50px] p-[1.875em] rounded-[5px]  px-6 ${getClassNames(index)}`}
+      className={`symptom-content has-animation flex-shrink-0 px-4 rounded-lg transition-opacity-transform duration-500 bg-[#fff] shadow-[0px_30px_60px_rgba(160,159,202,0.45)] w-[380px] h-[300px] mr-[25px] mt-[50px] p-[1.875em] rounded-[5px] px-6${getClassNames(index)}`}
 
       data-delay={index * 50}
     >
@@ -38,7 +38,7 @@ const CarouselItem = ({ item, index, currentIndex }) => {
       </div>
       <div className="text-justify" style={{ userSelect: 'none' }}>
         <h4 className="mb-3 font-poppins text-[24px] text-[#515184]">{item.title}</h4>
-        <p className="font-poppins-sans-serif text-[15px] text-[#515184] w-[20em]">{item.description}</p>
+        <p className="font-poppins-sans-serif text-[15px] text-[#515184]">{item.description}</p>
       </div>
     </div>
   );
@@ -79,7 +79,7 @@ const Carousel = () => {
 
   return (
     <div className="symptom-wrapper padding-50 pos-top bg-dark-blue-2 webkit-tap-highlight-color: transparent overflow-hidden">
-      <div className="container">
+      <div className="w-screen">
         <div className="justify-content-center">
           <div className="flex  justify-center">
             <div className="text-center">
