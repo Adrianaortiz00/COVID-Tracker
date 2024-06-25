@@ -5,7 +5,7 @@ const Layout = () => {
   return (
     <div>
       <Navbar />
-      <main className="bg-[#F7F8FC]">
+      <main>
         <Outlet />
       </main>
       {/* <footer>Footer</footer> */}
