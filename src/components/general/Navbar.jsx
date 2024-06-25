@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../public/assets/images/logo.png";
-import Button from "./Button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +16,9 @@ const Navbar = () => {
           <img src={logo} alt="Logo" />
 
           <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <Button
-              buttonStyle="bg-purple-blue w-40 h-11 rounded-3xl text-base text-white font-medium hover:bg-purple-blue"
-              navbar={true}
-            >
+            <button className="bg-purple-blue w-40 h-11 rounded-3xl text-base text-white font-medium hover:bg-[#3639AE]">
               <Link to="/tracker">Tracker</Link>
-            </Button>
+            </button>
 
             <button
               onClick={toggleMenu}
@@ -80,7 +76,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/prevention"
+                  to="/"
                   className="flex border-b-2 border-[#515184] md:border-0 py-3 pl-3 pr-4 text-gray-700 md:p-0"
                 >
                   Prevention
@@ -88,7 +84,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/quarantine"
+                  to="/"
                   className="flex border-b-2 border-[#515184] md:border-0 py-3 pl-3 pr-4 text-gray-700 md:p-0"
                 >
                   Quarantine
@@ -96,7 +92,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/pages"
+                  to="/"
                   className="flex border-b-2 border-[#515184] md:border-0 py-3 pl-3 pr-4 text-gray-700 md:p-0"
                 >
                   Pages
@@ -116,7 +112,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/about"
+                  to="/"
                   className="flex border-b-2 border-[#515184] md:border-0 py-3 pl-3 pr-4 text-gray-700 md:p-0"
                 >
                   About
@@ -124,7 +120,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  to="/help"
+                  to="/"
                   className="flex border-b-2 border-[#515184] md:border-0 py-3 pl-3 pr-4 text-gray-700 md:p-0"
                 >
                   Help
