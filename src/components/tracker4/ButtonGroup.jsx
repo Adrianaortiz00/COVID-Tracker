@@ -1,10 +1,18 @@
-import { PropTypes } from 'prop-types'
+import { PropTypes } from 'prop-types';
+import { useEffect } from 'react';
 import useApi from "../../services/useApi";
-import { API_URL_CASES_SORTED } from "../../config/urls"
+import { API_URL_CASES_SORTED } from "../../config/urls";
 import CountryButton from "./CountryButton";
 
-const ButtonGroup = ({ onClick }) => {
+const ButtonGroup = ({ onClick, onDataLoad }) => {
   let data = useApi(API_URL_CASES_SORTED);
+
+  useEffect(() => {
+    if (data && data.length > 0) {
+      onDataLoad(data[0].country);
+    }
+  }, [data, onDataLoad]);
+
   if ( data == null ) {
     return <div className='container m-auto w-full'><h2>Loading...</h2></div>;
   }
@@ -29,7 +37,8 @@ const ButtonGroup = ({ onClick }) => {
 }
 
 ButtonGroup.propTypes = {
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
+  onDataLoad: PropTypes.func
 };
 
 export default ButtonGroup
