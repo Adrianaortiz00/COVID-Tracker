@@ -2,7 +2,7 @@ import useGlobalData from "../../services/useGlobalData";
 import CardWorldwide from "./CardWorldwide";
 
 const WorldwideCards = () => {
-  const { data } = useGlobalData();
+  const data = useGlobalData();
 
   if (!data) return null;
 
@@ -10,7 +10,12 @@ const WorldwideCards = () => {
 
   console.log(data);
   const stats = [
-    { title: "Total Case", value: cases, className: "hover:border-red bg-[#fff2f2]", casesClassName: "text-red" },
+    {
+      title: "Total Case",
+      value: cases,
+      className: "hover:border-red bg-[#fff2f2]",
+      casesClassName: "text-red",
+    },
     {
       title: "Active Case",
       value: active,
