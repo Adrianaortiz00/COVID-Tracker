@@ -18,7 +18,7 @@ const useApi = (url) => {
         }
         getData(url);
     }, [url]);
-    return {data}
+    return data;
 }
 
 export default useApi;

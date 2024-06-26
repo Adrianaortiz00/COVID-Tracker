@@ -4,13 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'gray-super-light':'#ddd',
-        'blue-footer':'#1b2a4e',
-        'dark-blue-1':'#121158',
-        'dark-blue-2':'#171133',
+        'gray-super-light': '#ddd',
+        'blue-footer': '#1b2a4e',
+        'dark-blue-1': '#121158',
+        'dark-blue-2': '#171133',
         'purple-blue': '#3639ae',
         'purple': '#7e5bef',
-        'dark-purple':'#2e1065',
+        'dark-purple': '#2e1065',
         'pink': '#ff49db',
         'yellow': '#ffc82c',
         'gray-dark': '#273444',
@@ -22,6 +22,7 @@ export default {
         'green': '#82c519',
         'blue': '#2c6dff',
         'darker-blue': '#3639AE',
+        'gray-sidebar': '#F7F8FC',
         'cool-grey': '#8686b5',
 
       },
@@ -32,7 +33,7 @@ export default {
         lanenarLane: ["lanenarLane", "sans-serif"],
         themify: ["themify", "sans-serif"],
       },
-      fontSize:{
+      fontSize: {
         sm: '0.8rem',
         base: '1rem',
         xl: '1.25rem',
@@ -46,23 +47,23 @@ export default {
         'spin-slow': 'spin 5s linear infinite forwards',
       },
 
-       opacity: {
-            '70': '0.7',
-            '50': '0.5',
-          },
-          scale: {
-            '95': '0.95',
-            '90': '0.9',
-          },
-          transitionProperty: {
-            'opacity-transform': 'opacity, transform',
-          },
-          transitionDuration: {
-            '500': '500ms',
-          },
-          backgroundImage: {
-            'custom-gradient': 'linear-gradient(to right, #1e0c9d, #06cdec)',
-          },
-        },
+      opacity: {
+        '70': '0.7',
+        '50': '0.5',
+      },
+      scale: {
+        '95': '0.95',
+        '90': '0.9',
+      },
+      transitionProperty: {
+        'opacity-transform': 'opacity, transform',
+      },
+      transitionDuration: {
+        '500': '500ms',
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, #1e0c9d, #06cdec)',
+      },
     },
-};
+  },
+}
