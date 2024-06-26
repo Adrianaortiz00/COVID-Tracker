@@ -1,4 +1,3 @@
-import Hero from "./components/home/Hero";
 import useApi from "./services/useApi";
 import { API_BASE_URL_COUNTRIES } from "./config/urls";
 
