@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
-import useCountriesData from "../../services/useCountriesData";
+import useApi from '../../services/useApi';
+import { API_BASE_URL_COUNTRIES } from "../../config/urls";
 
 const SelectCountry = ( { onChange } ) => {
-  const data  = useCountriesData();
+  const data  = useApi(API_BASE_URL_COUNTRIES);
 
   const handleChange = (e) => {
     onChange(e.target.value);
