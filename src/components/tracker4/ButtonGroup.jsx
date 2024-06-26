@@ -15,7 +15,7 @@ const ButtonGroup = ({ onClick, onDataLoad }) => {
         setButtonSelected(data[0].country);
       }
     }
-  }, [data, onDataLoad,buttonSelected]);
+  }, [data, onDataLoad, buttonSelected]);
 
   const handleClick = (country) => {
     onClick(country);
