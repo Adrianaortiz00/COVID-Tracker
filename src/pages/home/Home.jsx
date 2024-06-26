@@ -4,7 +4,7 @@ import Carousel from "../home/sections/Carousel";
 import Faq from "../home/sections/Faq"
 import MetricsSection from "../home/sections/MetricsSection";
 import GetSimple from "./sections/GetSimple";
-import Footer from "./sections/Footer";
+import Footer from "../../components/general/Footer";
 
 
 const Home = () => {

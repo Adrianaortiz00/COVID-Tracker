@@ -24,6 +24,7 @@ export default {
         'darker-blue': '#3639AE',
         'gray-sidebar': '#F7F8FC',
         'cool-grey': '#8686b5',
+        'deep-blue': '#293f73',
 
       },
       fontFamily: {

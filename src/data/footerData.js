@@ -1,8 +1,8 @@
  const socialLinks = [
-    { href: "", iconClass: "text-white ti-facebook" },
-    { href: "", iconClass: "text-white ti-twitter-alt" },
-    { href: "", iconClass: "text-white ti-linkedin" },
-    { href: "", iconClass: "text-white ti-youtube" },
+    { icon: 'ti-facebook' },
+    { icon: 'ti-twitter-alt' },
+    { icon: 'ti-linkedin' },
+    { icon: 'ti-youtube' },
   ];
   
    const quickLinks = [
