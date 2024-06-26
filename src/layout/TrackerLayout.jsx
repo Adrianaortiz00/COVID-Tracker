@@ -7,7 +7,7 @@ const TrackerLayout = () => {
       <div>
         <Sidebar/>
       </div>
-      <Outlet />
+      <Outlet className="bg-[#F7F8FC]" />
     </div>
   );
 };

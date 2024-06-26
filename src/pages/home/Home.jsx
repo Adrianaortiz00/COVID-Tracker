@@ -1,8 +1,9 @@
-import Hero from "../../pages/home/sections/Hero";
-import StaySection from "../../pages/home/sections/StaySection";
-import Carousel from "../../pages/home/sections/Carousel";
-import Faq from "../../pages/home/sections/Faq";
-import MetricsSection from "../../pages/home/sections/MetricsSection";
+import Hero from "../home/sections/Hero";
+import StaySection from "../home/sections/StaySection";
+import Carousel from "../home/sections/Carousel";
+import Faq from "../home/sections/Faq"
+import MetricsSection from "../home/sections/MetricsSection";
+import GetSimple from "./sections/GetSimple";
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <StaySection/>
       <MetricsSection/>
       <Faq/>
+      <GetSimple/>
     </div>
   );
 };
