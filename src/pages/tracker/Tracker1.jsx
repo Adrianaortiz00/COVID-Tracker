@@ -2,11 +2,12 @@ import { useState } from 'react';
 import SelectCountry from "../../components/tracker1/SelectCountry";
 import CardGroup from '../../components/tracker/CardGroup';
 import GlobalDataCards from '../../components/tracker1/GlobalDataCards';
-import useGlobalData from "../../services/useGlobalData";
+import useApi from '../../services/useApi';
+import { API_BASE_URL_GLOBAL } from "../../config/urls";
 
 const Tracker1 = () => {
   const [selectedCountry, setSelectedCountry] = useState('Afghanistan');
-  const data = useGlobalData();
+  const data = useApi(API_BASE_URL_GLOBAL);
 
   const handleCountryChange = (country) => {
     setSelectedCountry(country);
