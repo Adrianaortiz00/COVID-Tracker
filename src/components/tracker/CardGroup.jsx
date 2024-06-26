@@ -1,9 +1,10 @@
 import CardVirus from "./CardVirus";
 import { PropTypes } from "prop-types";
-import useOneCountryData from '../../services/useOneCountryData';
+import useApi from '../../services/useApi';
+import { API_BASE_URL_COUNTRIES } from "../../config/urls";
 
 const CardGroup = ( { country }) => {
-  const data = useOneCountryData(country);
+  const data = useApi(`${API_BASE_URL_COUNTRIES}${country}`);
 
   if ( data == null ) {
     return <div className='container m-auto w-full'><h2>Loading...</h2></div>;
