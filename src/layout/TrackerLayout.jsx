@@ -7,7 +7,9 @@ const TrackerLayout = () => {
     <div className="flex font-poppins">
       <Sidebar />
       <Tracker0 />
-      <Outlet className="bg-[#F7F8FC]" />
+      <div className="flex-1">
+        <Outlet />
+      </div>
     </div>
   );
 };

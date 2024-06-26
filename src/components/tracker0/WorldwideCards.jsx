@@ -1,20 +1,21 @@
-import useGlobalData from "../../services/useGlobalData";
+import { API_BASE_URL_GLOBAL } from "../../config/urls";
+import useApi from "../../services/useApi";
 import CardWorldwide from "./CardWorldwide";
 
 const WorldwideCards = () => {
-  const data = useGlobalData();
+  const data = useApi(API_BASE_URL_GLOBAL);
 
   if (!data) return null;
 
-  const { cases, active, recovered, deaths } = data;
+  const { cases, active, recovered, deaths, todayCases, todayRecovered, todayDeaths } = data;
 
-  console.log(data);
   const stats = [
     {
       title: "Total Case",
       value: cases,
       className: "hover:border-red bg-[#fff2f2]",
       casesClassName: "text-red",
+      extraCases: todayCases,
     },
     {
       title: "Active Case",
@@ -27,12 +28,14 @@ const WorldwideCards = () => {
       value: recovered,
       className: "hover:border-green bg-[#edffec]",
       casesClassName: "text-green",
+      extraCases: todayRecovered,
     },
     {
       title: "Deatch Case",
       value: deaths,
       className: "hover:border-darker-blue bg-[#eefbff]",
       casesClassName: "text-darker-blue",
+      extraCases: todayDeaths,
     },
   ];
 
@@ -44,6 +47,7 @@ const WorldwideCards = () => {
           cases={stat.value}
           className={stat.className}
           casesClassName={stat.casesClassName}
+          extraCases={stat.extraCases}
         />
       ))}
     </section>
