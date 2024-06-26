@@ -22,6 +22,7 @@ export default {
         'green': '#82c519',
         'blue': '#2c6dff',
         'darker-blue': '#3639AE',
+        'cool-grey': '#8686b5',
 
       },
       fontFamily: {
