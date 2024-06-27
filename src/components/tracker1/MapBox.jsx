@@ -5,7 +5,7 @@ import Map from "./Map";
 const MapBox = () => {
     const [content, setContent] = useState("");
     return (
-        <div>
+        <div className="w-[50%]">
             <Map /* setTooltipContent={setContent} */ />
             {/* <ReactTooltip>{content}</ReactTooltip> */}
         </div>
