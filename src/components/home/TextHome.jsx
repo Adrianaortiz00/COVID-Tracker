@@ -3,10 +3,9 @@ import Button from "../general/Button";
 
 function TextHome({ title, text, buttonText, buttonStyle, titleStyle, textStyle }) {
     return (
-        <section className="pl-[6em] pr-[6em]">
-
-            <h2 className= {`${titleStyle} font-poppins leading-[1em] text-[3.5em] text-white font-extrabold pt-[0.5em] line-clamp-6`}>{title}</h2>
-            <p className=  {`${textStyle} font-poppins font-medium text-[1em] text-gray-super-light pt-[1em] `}>{text}</p>
+        <section className="md:pl-[6em] md:pr-[6em]">
+            <h2 className={`${titleStyle} font-poppins text-[2em] leading-10 text-white md:leading-[1em]  md:text-[3.5em] md:text-white font-bold md:font-extrabold md:pt-[0.5em] w-5/6 md:w-fit md:line-clamp-6`}>{title}</h2>
+            <p className={`${textStyle} font-poppins pt-6 font-medium md:text-[1em] text-gray-super-light md:pt-[1em] w-11/12 `}>{text}</p>
             <Button buttonText={buttonText} buttonStyle={buttonStyle} />
         </section>
     );

@@ -11,7 +11,7 @@ import CardSponsors from "./sections/CardSponsors";
 
 const Home = () => {
   return (
-    <div className="bg-dark-blue-2">
+    <div className="bg-dark-blue-2 w-screen">
       <Hero/>
       <CardSponsors/>
       <Carousel/>
