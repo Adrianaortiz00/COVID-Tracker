@@ -23,7 +23,6 @@ export default {
         'blue': '#2c6dff',
         'darker-blue': '#3639AE',
         'gray-sidebar': '#F7F8FC',
-
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
