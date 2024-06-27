@@ -4,9 +4,9 @@ import TextHome from "../../../components/home/TextHome"
 const GetSimple = () => {
     return (
     <section className='to-dark-blue-1'>
-      <div style={{paddingTop: '100px'}}>
+      <div className='pt-24'>
         <div className='flex flex-wrap justify-between bg-custom-gradient rounded-lg p-100 mt-100' style={{ margin: '0 116.100px' }}>
-          <div className='w-full sm:w-1/2 p-15'>
+          <div className='w-full sm:w-full md:w-1/2 p-4'>
             <div className='mb-20 ml-20'>
               <TextHome  
                 title="Get the simple app for latest news"
