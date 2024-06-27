@@ -6,12 +6,14 @@ import MetricsSection from "../home/sections/MetricsSection";
 import GetSimple from "./sections/GetSimple";
 import Blog from "./sections/Blog";
 import Footer from "../../components/general/Footer";
+import CardSponsors from "./sections/CardSponsors";
 
 
 const Home = () => {
   return (
     <div className="bg-dark-blue-2">
       <Hero/>
+      <CardSponsors/>
       <Carousel/>
       <StaySection/>
       <MetricsSection/>
