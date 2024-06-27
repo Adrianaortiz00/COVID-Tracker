@@ -67,6 +67,8 @@ const Map = ({ setTooltipContent }) => {
                                 <Geography
                                     key={geo.rsmKey}
                                     geography={geo}
+                                    stroke="#FFF"
+                                    strokeWidth={0.5} 
                                     onMouseEnter={() => {
                                         setTooltipContent("hoola");
                                     }}
