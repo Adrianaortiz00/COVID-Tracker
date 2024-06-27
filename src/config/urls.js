@@ -10,3 +10,8 @@ export const API_BASE_URL_COUNTRIES= `${API_URL_COVID}countries/`;
 
 //returns all countries sorted by cases (desc)
 export const API_URL_CASES_SORTED = `${API_BASE_URL_COUNTRIES}?sort=cases`;
+
+
+/* MAPS */
+
+export const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"

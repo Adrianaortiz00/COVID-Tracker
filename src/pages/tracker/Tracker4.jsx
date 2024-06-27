@@ -33,7 +33,7 @@ const Tracker4 = () => {
       <section>
         <h2 className='text-xl font-semibold text-dark-blue-1 border-b-[1px] border-gray-super-light mb-7 pb-2'>Covid-19 Country Wise - Tabs</h2>
         <ButtonGroup onClick={handleCountryChange} onDataLoad={handleDataLoad}/>
-        <CardGroup country={selectedCountry} />
+        <CardGroup country={selectedCountry} width="w-full" />
       </section>
     </article>
   );
