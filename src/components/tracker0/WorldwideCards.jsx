@@ -40,7 +40,7 @@ const WorldwideCards = () => {
   ];
 
   return (
-    <section className="font-medium flex flex-col gap-3 px-3">
+    <section className="font-medium flex flex-col gap-3">
       {stats?.map((stat) => (
         <CardWorldwide
           title={stat.title}
