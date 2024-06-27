@@ -34,7 +34,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full border-t border-[#223461] bg-blue-footer py-5">
-        <div className="text-cool-grey flex flex-col sm:flex-row justify-between items-center sm:px-6 lg:px-8 text-sm">
+        <div className="text-cool-grey flex flex-col sm:flex-row justify-between items-center sm:px-6 lg:px-28 text-sm">
           <p>© Copyright 2020. All Rights Reserved</p>
           <p>Design by <span className="text-white font-semibold">DexignZon</span></p>
         </div>
