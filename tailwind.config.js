@@ -4,30 +4,6 @@ export default {
   theme: {
     extend: {
       colors: {
-<<<<<<< HEAD
-        'gray-super-light': '#ddd',
-        'blue-footer': '#1b2a4e',
-        'dark-blue-1': '#121158',
-        'dark-blue-2': '#171133',
-        'purple-blue': '#3639ae',
-        'purple': '#7e5bef',
-        'dark-purple': '#2e1065',
-        'pink': '#ff49db',
-        'yellow': '#ffc82c',
-        'gray-dark': '#273444',
-        'gray': '#8492a6',
-        'gray-light': '#d3dce6',
-        'red': '#ff0000',
-        'dark-red': '#b70202',
-        'orange': '#ff6a07',
-        'green': '#82c519',
-        'blue': '#2c6dff',
-        'darker-blue': '#3639AE',
-        'gray-sidebar': '#F7F8FC',
-        'cool-grey': '#8686b5',
-        'deep-blue': '#293f73',
-
-=======
         "gray-super-light": "#ddd",
         "blue-footer": "#1b2a4e",
         "dark-blue-1": "#121158",
@@ -47,7 +23,9 @@ export default {
         blue: "#2c6dff",
         "darker-blue": "#3639AE",
         "gray-sidebar": "#F7F8FC",
->>>>>>> 0a5156bc4c32cfae9ebc30022ef321e1d0351e22
+        'cool-grey': '#8686b5',
+        'deep-blue': '#293f73',
+
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
