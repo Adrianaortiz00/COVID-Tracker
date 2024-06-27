@@ -7,15 +7,16 @@ import '../../../index.css';
 const CarouselItem = ({ item, index, currentIndex }) => {
   const getClassNames = (index) => {
     if (index === currentIndex) return 'opacity-100 transform scale-100';
-    if (index === currentIndex + 1  || (currentIndex === 0 && index === carouselData.length - 1)) return 'opacity-100 transform scale-100';
+    if (index === currentIndex + 1 || (currentIndex === 0 && index === carouselData.length - 1)) return 'opacity-100 transform scale-100';
     if (index === currentIndex + 2 || (currentIndex === carouselData.length - 1 && index === 0)) return 'opacity-100 transform scale-100';
     return 'opacity-70 transform scale-95';
   };
 
+
   return (
     <div
       key={index}
-      className={`symptom-content has-animation flex-shrink-0 px-4 rounded-lg transition-opacity-transform duration-500 bg-[#fff] shadow-[0px_30px_60px_rgba(160,159,202,0.45)] w-[380px] h-[300px] mr-[25px] mt-[50px] p-[1.875em] rounded-[5px] px-6${getClassNames(index)}`}
+      className={`symptom-content has-animation flex-shrink-0 px-4 rounded-lg transition-opacity-transform duration-500 bg-[#fff] shadow-[0px_30px_60px_rgba(160,159,202,0.45)] w-[380px] h-[300px] mr-[25px] mt-[50px] p-[1.875em] rounded-[5px] px-6 ${getClassNames(index)}`}
 
       data-delay={index * 50}
     >
