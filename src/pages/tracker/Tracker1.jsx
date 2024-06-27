@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import SelectCountry from "../../components/tracker1/SelectCountry";
+import MapBox from "../../components/tracker1/MapBox";
 import CardGroup from '../../components/tracker/CardGroup';
 import GlobalDataCards from '../../components/tracker1/GlobalDataCards';
 import useApi from '../../services/useApi';
@@ -30,9 +31,9 @@ const Tracker1 = () => {
         <SelectCountry onChange={handleCountryChange}/>
         <p className="font-medium">Updated: {updateDate}</p>
       </section>
-      <section className='center-section flex'>
-        <CardGroup country={selectedCountry}/>
-        <img src="/assets/images/map-mock.png" alt="map" />
+      <section className='center-section flex gap-9'>
+        <CardGroup country={selectedCountry} width="w-[50%]"/>
+        <MapBox />
       </section>
     <GlobalDataCards data={data}/>
     </article>
