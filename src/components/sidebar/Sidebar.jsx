@@ -1,5 +1,5 @@
-import IconsSidebar from "./IconsSidebar"
-import { Link } from "react-router-dom"
+import IconsSidebar from "./IconsSidebar";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
     return (
@@ -7,7 +7,7 @@ const Sidebar = () => {
             <Link to="/">
                 <img className="w-11 mt-4 mb-4 animate-spin-slow " src="\assets\images\coronavirus.png" alt="logo" />
             </Link>
-            <Link to="/tracker/tracker1">
+            <Link to="/tracker">
                 <IconsSidebar iconSB="ti-pie-chart" />
             </Link>
             <Link to="/tracker/tracker2">
@@ -21,9 +21,9 @@ const Sidebar = () => {
             <IconsSidebar iconSB="ti-stats-up" />
             <IconsSidebar iconSB="ti-world" />
             <IconsSidebar iconSB="ti-comment" />
-                <img src="\assets\images\icons\flickr-svgrepo-com.svg" alt="flickr icon" className="fixed rounded-3xl bottom-0 mb-8 w-6 h-6 mt-8 max-xl:" />
+            <i className="ti ti-flickr-alt rounded-full text-[1.3em] text-center text-purple-blue fixed bottom-0 mb-8 mt-8"></i>
         </div>
-    )
-}
+    );
+};
 
-export default Sidebar
+export default Sidebar;
