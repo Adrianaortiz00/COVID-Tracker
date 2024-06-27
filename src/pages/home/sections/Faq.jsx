@@ -14,7 +14,7 @@ const Faq = () => {
   }, []);
 
   return (
-    <article className="container mx-auto font-poppins text-white pb-20">
+    <article className="container mx-auto font-poppins text-white pb-10 md:pb-20">
 			<section className="titles font-bold text-center flex flex-col items-center">
 				<h5 className="text-[1.1em] font-semibold">Faqs</h5>
 				<h2 className="md:w-[550px] text-[2em] leading-[1.2em] md:text-[3.5em] text-white font-extrabold mt-2">Frequently Asked Questions</h2>

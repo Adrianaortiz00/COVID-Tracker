@@ -4,14 +4,14 @@ import TextHome from "../../../components/home/TextHome"
 const GetSimple = () => {
   return (
     <section className='to-dark-blue-1'>
-      <div className='pt-8 lg:pt-24 flex justify-center'>
-        <div className='w-full lg:w-4/5 bg-custom-gradient rounded-lg p-4 lg:p-5'>
+      <div className='md:pt-8 lg:pt-24 flex justify-center'>
+        <div className='m-4 md:m-0 md:w-full lg:w-4/5 bg-custom-gradient rounded-lg p-4 lg:p-5'>
           <div className='flex flex-col lg:flex-row justify-between'>
             <div className='w-full lg:w-1/2 p-2'>
               <div className='mb-8 lg:mb-16'>
                 <TextHome  
                   title="Get the simple app for latest news"
-                  titleStyle="leading-[1.2em] pt-[2em] lg:w-[35rem] lg:h-[15rem] lg:line-clamp-6"
+                  titleStyle="leading-[1.2em] md:pt-28 w-[350px] md:w-[35rem] md:h-[15rem] lg:line-clamp-6"
                   text="Human coronaviruses are common and are typically associated with mild illnesses, similar to the common cold."
                   textStyle="lg:w-[33rem]"
                   buttonStyle="bg-white text-black border-[none] rounded-[5px] mt-[2em] mb-4 lg:mb-8 lg:w-[12rem]"
