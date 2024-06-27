@@ -3,8 +3,8 @@ import WorldwideCards from "../../../components/tracker0/WorldwideCards";
 
 const Tracker0 = () => {
   return (
-    <div className="w-[330px]">
-      <h1 className="font-bold text-2xl mb-5 mt-7 text-center">COVID-19 Tracker</h1>
+    <div className="w-[330px] m-3">
+      <h1 className="font-bold text-2xl mb-5 mt-1">COVID-19 Tracker</h1>
       <WorldwideCards />
       <Top10Countries />
     </div>
