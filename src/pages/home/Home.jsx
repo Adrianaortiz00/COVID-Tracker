@@ -4,6 +4,7 @@ import Carousel from "../home/sections/Carousel";
 import Faq from "../home/sections/Faq"
 import MetricsSection from "../home/sections/MetricsSection";
 import GetSimple from "./sections/GetSimple";
+import Blog from "./sections/Blog";
 import Footer from "../../components/general/Footer";
 
 
@@ -16,6 +17,7 @@ const Home = () => {
       <MetricsSection/>
       <Faq/>
       <GetSimple/>
+      <Blog/>
       <Footer/>
     </div>
   );
