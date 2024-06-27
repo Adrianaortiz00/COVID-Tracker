@@ -3,12 +3,7 @@ import { PropTypes } from "prop-types";
 import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
 import { GEO_URL } from "../../config/urls";
 
-const Map = ({ setTooltipContent }) => {
-    const [country, setCountry] = useState("");
-
-    const handleCountryClick = (geo) => {
-        setCountry(geo.properties.name);
-    };
+const Map = ({ setTooltipContent, onClick }) => {
 
     const [position, setPosition] = useState({ coordinates: [0, 0], zoom: 1 });
 
@@ -70,12 +65,14 @@ const Map = ({ setTooltipContent }) => {
                                     stroke="#FFF"
                                     strokeWidth={0.5} 
                                     onMouseEnter={() => {
-                                        setTooltipContent("hoola");
+                                        setTooltipContent(geo.properties.name);
                                     }}
                                     onMouseLeave={() => {
                                         setTooltipContent("");
                                     }}
-                                    onClick={() => handleCountryClick(geo)}
+                                    onClick={onClick}
+                                    data-tip
+                                    data-for="country"
                                     style={{
                                         default: {
                                             fill: "#3639AE",
@@ -102,6 +99,7 @@ const Map = ({ setTooltipContent }) => {
 
 Map.propTypes = {
     setTooltipContent: PropTypes.func,
+    onClick: PropTypes.func,
 };
 
 export default Map;
