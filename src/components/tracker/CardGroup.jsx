@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 import useApi from '../../services/useApi';
 import { API_BASE_URL_COUNTRIES } from "../../config/urls";
 
-const CardGroup = ( { country, width }) => {
+const CardGroup = ( { country }) => {
   const data = useApi(`${API_BASE_URL_COUNTRIES}${country}`);
 
   if ( data == null ) {
@@ -26,7 +26,7 @@ const CardGroup = ( { country, width }) => {
   const colors = ["defult","red","green","blue","orange","redark"]
 
   return (
-    <section className={`cards flex gap-9 flex-wrap ${width}`}>
+    <section className='cards basis-[38.3rem] flex gap-9 flex-wrap'>
     {stats.map((stat, index) => (
       <CardVirus key={index} data={stat} color={colors[index]}/>
     ))}
