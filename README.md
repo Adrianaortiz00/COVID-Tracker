@@ -76,7 +76,7 @@ El diseño de la interfaz ha sido proporcionado por la empresa, por lo que en es
 ### Ejemplos de uso
 
 - Navega de la homepage al tracker 
-- Añade productos al carrito de compras y visualiza el resumen en la página del carrito.
+- Filtra los datos por país, fecha, y otros parámetros relevantes.
 
 ## Estructura del Proyecto
 
