@@ -10,7 +10,7 @@ const SidebarIcons = ({ iconSB }) => {
     );
 };
 
-IconsSidebar.propTypes = {
+SidebarIcons.propTypes = {
     iconSB: PropTypes.string,
 };
 
