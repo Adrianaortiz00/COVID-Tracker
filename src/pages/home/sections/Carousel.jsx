@@ -83,15 +83,15 @@ const Carousel = () => {
           <div className="justify-content-center">
             <div className="flex  justify-center">
               <div className="text-center">
-                <h5 className="has-animation font-poppins font-medium text-[18px] text-white pt-[4em]  line-clamp-6 " data-delay="0">App Feature</h5>
-                <h2 className="has-animation font-poppins font-extrabold leading-[1em] text-[3.438em] text-white  pt-[0.3em] line-clamp-5 w-[15em] h-[2.5em]" data-delay="50">Basic Feature You Will Get When You Use</h2>
+                <h5 className="has-animation font-poppins font-medium text-[18px] text-white md:pt-[4em] line-clamp-6 " data-delay="0">App Feature</h5>
+                <h2 className="has-animation font-poppins font-extrabold leading-[1em] text-[2em] md:text-[3.5em] text-white  pt-[0.3em] line-clamp-5 md:w-[15em] h-[2.5em]" data-delay="50">Basic Feature You Will Get When You Use</h2>
               </div>
             </div>
           </div>
           <div className="row justify-content-center">
             <div
               ref={containerRef}
-              className="relative w-[100%] mx-auto mt-8 overflow-hidden"
+              className="relative w-[100%] mx-auto md:mt-8 overflow-hidden"
               onMouseDown={handleMouseDown}
               onMouseMove={handleMouseMove}
               onMouseUp={handleMouseUp}
