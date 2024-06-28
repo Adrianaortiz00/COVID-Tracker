@@ -4,17 +4,23 @@ import Carousel from "../home/sections/Carousel";
 import Faq from "../home/sections/Faq"
 import MetricsSection from "../home/sections/MetricsSection";
 import GetSimple from "./sections/GetSimple";
+import Blog from "./sections/Blog";
+import Footer from "../../components/general/Footer";
+import CardSponsors from "./sections/CardSponsors";
 
 
 const Home = () => {
   return (
-    <div className="bg-dark-blue-2">
+    <div className="bg-dark-blue-2 w-screen">
       <Hero/>
+      <CardSponsors/>
       <Carousel/>
       <StaySection/>
       <MetricsSection/>
       <Faq/>
       <GetSimple/>
+      <Blog/>
+      <Footer/>
     </div>
   );
 };

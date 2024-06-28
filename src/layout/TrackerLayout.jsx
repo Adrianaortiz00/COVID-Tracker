@@ -1,15 +1,17 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Tracker0 from "../pages/tracker/sections/Tracker0";
 import Sidebar from "../components/sidebar/Sidebar";
 
 const TrackerLayout = () => {
-  return (
-    <div className="font-poppins">
-      <div>
-        <Sidebar/>
-      </div>
-      <Outlet className="bg-[#F7F8FC]" />
-    </div>
-  );
+    return (
+        <div className="flex font-poppins">
+            <Sidebar />
+            <Tracker0 />
+            <div className="flex-1 bg-[#F7F8FC]">
+                <Outlet />
+            </div>
+        </div>
+    );
 };
 
 export default TrackerLayout;
