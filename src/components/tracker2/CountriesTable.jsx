@@ -94,13 +94,13 @@ const CountriesTable = ({ data }) => {
   });
 
   return (
-    <div className=" px-5 py-0">
+    <div className=" px-5 py-0 overflow-scroll">
       <div className="px-5 py-[15px] border-b-[rgba(0,0,0,0.12)] border-b border-solid">
         <h2 className="font-poppins font-normal text-[22px] leading-[1.2] text-dark-blue-1 mb-0">
           Ajax Data Table - Covid-19 Country Wise State
         </h2>
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col items-center md:flex-row justify-between">
         <div className="font-poppins font-light flex p-2.5 items-center">
           <h4 className="">Show</h4>
           <select
@@ -128,7 +128,7 @@ const CountriesTable = ({ data }) => {
           />
         </div>
       </div>
-      <table className="text-left border-collapse w-full">
+      <table className="font-poppins font-light text-left border-collapse w-full">
         <thead className=" text-dark-blue-1">
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
@@ -149,7 +149,7 @@ const CountriesTable = ({ data }) => {
         </thead>
         <tbody className=" text-purple-blue">
           {table.getRowModel().rows.map((row) => (
-            <tr className="even:bg-gray-sidebar" key={row.id}>
+            <tr className=" even:bg-gray-sidebar border-b-[#ccc] border-b border-solid font-poppins font-normal" key={row.id}>
               {row.getVisibleCells().map((cell) => (
                 <td className="px-2.5 py-2" key={cell.id}>
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -159,7 +159,7 @@ const CountriesTable = ({ data }) => {
           ))}
         </tbody>
       </table>
-      <div className="flex justify-between px-[0.8rem] py-5 font-poppins font-light">
+      <div className="flex flex-col items-center md:flex-row justify-between px-[0.8rem] py-5 font-poppins font-light">
         <div className="">
           Showing {table.getState().pagination.pageIndex + 1} to{" "}
           {table.getPageCount()}
