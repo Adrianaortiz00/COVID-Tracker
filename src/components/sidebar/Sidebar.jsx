@@ -1,4 +1,4 @@
-import IconsSidebar from "./IconsSidebar";
+//import IconsSidebar from "./IconsSidebar";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
