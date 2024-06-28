@@ -94,28 +94,41 @@ const CountriesTable = ({ data }) => {
   });
 
   return (
-    <div>
-      <div className="title-container">
-        <h2 className="font-semibold text-[22px] leading-[1.2] text-dark-blue-1 mb-0">
+    <div className=" px-5 py-0">
+      <div className="px-5 py-[15px] border-b-[rgba(0,0,0,0.12)] border-b border-solid">
+        <h2 className="font-poppins font-normal text-[22px] leading-[1.2] text-dark-blue-1 mb-0">
           Ajax Data Table - Covid-19 Country Wise State
         </h2>
       </div>
-      <DebouncedInput value={filter ?? ""} onChange={value => setFilter(String(value))} placeholder="Search"/>
-      <select
-        value={table.getState().pagination.pageSize}
-        onChange={(e) => {
-          table.setPageSize(Number(e.target.value));
-        }}
-      >
-        {[10, 25, 50, 100].map((size) => {
-          return (
-            <option key={size} value={size}>
-              {size}
-            </option>
-          );
-        })}
-      </select>
-      <table className="text-left border-collapse">
+      <div className="flex justify-between">
+        <div className="font-poppins font-light flex p-2.5 items-center">
+          <h4 className="">Show</h4>
+          <select
+            className="border h-10 mx-2.5 my-0 px-[15px] py-[5px] border-solid border-[#ccc]"
+            value={table.getState().pagination.pageSize}
+            onChange={(e) => {
+              table.setPageSize(Number(e.target.value));
+            }}
+          >
+            {[10, 25, 50, 100].map((size) => {
+              return (
+                <option key={size} value={size}>
+                  {size}
+                </option>
+              );
+            })}
+          </select>
+          <h4>entries</h4>
+        </div>
+        <div className="flex items-center">
+          <h4 className="font-poppins font-light">Search:</h4>
+          <DebouncedInput
+            value={filter ?? ""}
+            onChange={(value) => setFilter(String(value))}
+          />
+        </div>
+      </div>
+      <table className="text-left border-collapse w-full">
         <thead className=" text-dark-blue-1">
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
@@ -146,17 +159,18 @@ const CountriesTable = ({ data }) => {
           ))}
         </tbody>
       </table>
-      <div>
-        <button onClick={() => table.firstPage()}>Primer página</button>
-        <button onClick={() => table.previousPage()}>Página anterior</button>
-        <button onClick={() => table.nextPage()}>Página siguiente</button>
-        <button onClick={() => table.lastPage()}>Última página</button>
+      <div className="flex justify-between px-[0.8rem] py-5 font-poppins font-light">
+        <div className="">
+          Showing {table.getState().pagination.pageIndex + 1} to{" "}
+          {table.getPageCount()}
+        </div>
+        <div className="flex gap-5">
+          <button onClick={() => table.firstPage()}>First Page</button>
+          <button onClick={() => table.previousPage()}>⭠ Previus</button>
+          <button onClick={() => table.nextPage()}>Next ⭢</button>
+          <button onClick={() => table.lastPage()}>Last Page</button>
+        </div>
       </div>
-      <div>
-        Página {table.getState().pagination.pageIndex + 1} de{" "}
-        {table.getPageCount()}
-      </div>
-      +
     </div>
   );
 };
@@ -186,6 +200,7 @@ function DebouncedInput({
 
   return (
     <input
+      className="border h-10 max-w-[150px] ml-[0.5em] px-[15px] py-2.5 border-solid border-[#ccc]"
       {...props}
       value={value}
       onChange={(e) => setValue(e.target.value)}
