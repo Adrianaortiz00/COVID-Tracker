@@ -11,7 +11,7 @@ const CardVirus = ({data, color}) => {
       <div className="data bg-transparent">
         <h3 className={`font-semibold px-5 pt-1 pb-2 text-[2em] ${colorVariants[color]}`}>{data.value}</h3>
       </div>
-      <div className="background icon-container absolute top-[-1.875rem] left-44 w-[8.75rem] opacity-10">
+      <div className="background icon-container absolute top-[-1.875rem] right-[-1.875rem] w-[8.75rem] opacity-10">
           <img className="icon group-hover:animate-spin-slow" src={`/assets/images/icons/covid-${color}.svg`} alt="COVID-19 Icon" />
       </div>
     </div>
