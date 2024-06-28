@@ -43,6 +43,7 @@ const WorldwideCards = () => {
     <section className="font-medium flex flex-col gap-3">
       {stats?.map((stat) => (
         <CardWorldwide
+          key={stat.title}
           title={stat.title}
           cases={stat.value}
           className={stat.className}
