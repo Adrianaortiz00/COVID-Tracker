@@ -39,8 +39,8 @@ const Tracker1 = () => {
                 <SelectCountry onChange={handleCountryChange} />
                 <p className="font-medium mt-5 md:mt-0">Updated: {updateDate}</p>
             </section>
-            <section className="center-section md:grid md:grid-cols-2 md:gap-9">
-                <CardGroup country={selectedCountry} />
+            <section className="center-section md:grid md:grid-cols-2 md:gap-9 items-start">
+                <CardGroup country={selectedCountry} columns={'grid-cols-2'}/>
                 <MapBox />
             </section>
             <GlobalDataCards data={data} />
