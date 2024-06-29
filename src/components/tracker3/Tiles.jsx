@@ -1,58 +1,25 @@
-import {
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
-    getSortedRowModel,
-    createColumnHelper,
-
-  } from "@tanstack/react-table";
   import { useEffect, useMemo, useState, } from "react";
   import { PropTypes } from "prop-types";
   
+  const Tiles = ({ data }) => {
+  const topCountries = data.sort((a, b) => b.cases - a.cases).slice(0, 10);
+
  
 
-  const Tiles = ({ data }) => {
-  
-    const columns = useMemo(
-      () => [
-        {
-          header: "Top Cases",
-          accessorKey: "TopCases",
-        },
-        {
-          header: "Today Cases",
-          accessorKey: "TodayCases",
-        },
-        {
-          header: "Today Deaths",
-          accessorKey: "TodayDeaths",
-        },
-        {
-            header: "Today Deaths",
-            accessorKey: "TodayDeaths",
-        },
-        {
-            header: " Top Active",
-            accessorKey: "TopActive",
-        },
-        {
-          header: "Top Recover",
-          accessorKey: "TopRecover",
-        },
+    const tablaTopCases = topCountries.map(valor => {
+        return {
+        nombrepais: valor.NameCountry,
+        flag: valor.CountryFlag,
+        topcases: valor.Topcases
+    };
+    });
 
-      ],
-      []
-    );
-  
+    console.log(tablaTopCases);
 
-    const table = useReactTable({
-        data,
-        columns,
-        getSortedRowModel: getSortedRowModel(),
-        getCoreRowModel: getCoreRowModel(),
-    })
-
-   console.log(data);
+/*     const tablaTopActive = data.map(valor => {
+        return {nombrepais: valor.NameCountry, flag: valor.CountryFlag, topActives: valor.TopActive};
+    }); */
+    
     return (
       <div className="px-5 py-0 bg-gray-sidebar">
         <div className="px-5 py-[15px] border-b-[rgba(0,0,0,0.12)] border-b border-solid">
@@ -61,38 +28,29 @@ import {
           </h2>
         </div>
         <div className="flex justify-between">
-
+            <div>
+                {tablaTopCases.map((pais, index) => {
+                    return (
+                        <div key={index}>
+                            {/* <p>{element.nombrepais}</p> */}
+                            <img src={pais.flag} alt={`Bandera de ${pais.nombrepais}`} />
+                            <p>{pais.nombrepais} {pais.topcases}</p>
+                        </div>
+                    );
+                })}    
+            </div>
+{/*             <div>
+                {tablaTopActive.map((pais, index) => {
+                    return (
+                        <div key={index}>
+                            <p>{element.nombrepais}</p>
+                            <p>{element.flag}</p>
+                            <p>{element.topActives}</p>
+                        </div>
+                    );
+                })}    
+            </div> */}
         </div>
-        <table className="text-left border-collapse w-full">
-          <thead className=" text-dark-blue-1">
-            {table.getHeaderGroups().map((headerGroup) => (
-              <tr key={headerGroup.id}>
-                {headerGroup.headers.map((header) => (
-                  <th key={header.id} >
-                    {header.isPlaceholder
-                        ? null
-                        : flexRender(
-                      header.column.columnDef.header,
-                      header.getContext()
-                    )}
-                    
-                  </th>
-                ))}
-              </tr>
-            ))}
-          </thead>
-          <tbody className=" text-purple-blue">
-            {table.getRowModel().rows.map((row) => (
-                 <tr className="" key={row.id}>
-                {row.getVisibleCells().map((cell) => (
-                  <td  key={cell.id}>
-                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                  </td>
-                ))}
-              </tr> 
-            ))}
-          </tbody>
-        </table>
       </div>
     );
   };
@@ -100,9 +58,29 @@ import {
   
   Tiles.propTypes = {
     data: PropTypes.array,
-  };
+  }
   
-  function DebouncedInput({
+
+
+/*   return (
+    <div>
+      <h3 className="text-dark-blue-2 font-semibold mt-6 mb-5">Top 10 Country</h3>
+      {topCountries.map((country) => (
+        <CardTop10Country
+          key={country.country}
+          flag={country.countryInfo.flag}
+          country={country.country}
+          cases={country.cases}
+        />
+      ))}
+    </div>
+  );
+}; */
+
+
+
+
+ /*  function DebouncedInput({
     value: initialValue,
     onChange,
     debounce = 500,
@@ -129,7 +107,7 @@ import {
         onChange={(e) => setValue(e.target.value)}
       ></input>
     );
-  }
+  } */
 
   
   export default Tiles;
