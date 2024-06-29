@@ -14,6 +14,7 @@ const useApi = (url) => {
                 setData(json_data);
             } catch (error) {
                 console.error(`Error fetching data: ${error}`);
+                setData(false);
             }
         }
         getData(url);

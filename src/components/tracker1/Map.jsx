@@ -70,7 +70,9 @@ const Map = ({ setTooltipContent, onClick }) => {
                                     onMouseLeave={() => {
                                         setTooltipContent("");
                                     }}
-                                    onClick={onClick}
+                                    onClick={() => {
+                                        onClick(geo.properties.name);
+                                    }}
                                     data-tip
                                     data-for="country"
                                     style={{
