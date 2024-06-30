@@ -6,7 +6,7 @@ const GlobalDataCards = ( { data } ) => {
   const { cases, recovered, deaths, todayDeaths } = data;
   const stats = [cases, recovered, deaths, todayDeaths];
   return (
-    <section className="my-10 flex flex-wrap gap-1">
+    <section className=" my-5 md:my-10 grid grid-cols-1 min-[470px]:grid-cols-2 md:flex md:flex-wrap gap-1">
       {stats?.map((stat, index) => (
         <CardGlobal key={index} icon={cardLabels[index].icon} title={cardLabels[index].label} data={stat}/>
       ))}

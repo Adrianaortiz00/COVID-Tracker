@@ -33,7 +33,7 @@ const Tracker4 = () => {
     }
 
     return (
-        <article className="p-5 text-gray-dark">
+        <article className="p-3 md:p-5 text-gray-dark">
             <section>
                 <h2 className="text-xl font-semibold text-dark-blue-1 border-b-[1px] border-gray-super-light mb-7 pb-2">
                     Covid-19 Country Wise - Tabs
