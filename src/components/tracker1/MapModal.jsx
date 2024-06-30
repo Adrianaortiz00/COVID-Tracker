@@ -13,7 +13,7 @@ const MapModal = ({ openModal, setOpenModal, country }) => {
 
     useEffect(() => {
         if (openModal) {
-            const timer = setTimeout(() => setShowModal(true), 150);
+            const timer = setTimeout(() => setShowModal(true), 400);
             return () => clearTimeout(timer);
         } else {
             setShowModal(false);
