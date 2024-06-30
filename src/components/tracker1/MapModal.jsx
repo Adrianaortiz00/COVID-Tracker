@@ -4,6 +4,7 @@ import { PropTypes } from "prop-types";
 import useApi from "../../services/useApi";
 import { API_BASE_URL_COUNTRIES } from "../../config/urls";
 import fullCoutryNames from "../../data/fullCoutryNames"
+import MapModalContent from "./MapModalContent";
 
 const MapModal = ({ openModal, setOpenModal, country }) => {
     const countryName = fullCoutryNames[country] || country;
@@ -12,7 +13,7 @@ const MapModal = ({ openModal, setOpenModal, country }) => {
 
     useEffect(() => {
         if (openModal) {
-            const timer = setTimeout(() => setShowModal(true), 300); // 500ms delay
+            const timer = setTimeout(() => setShowModal(true), 150);
             return () => clearTimeout(timer);
         } else {
             setShowModal(false);
@@ -36,27 +37,13 @@ const MapModal = ({ openModal, setOpenModal, country }) => {
             deaths: data.deaths,
             recovered: data.recovered,
         };
-        content = (
-            <div className="space-y-6 grid grid-cols-2">
-                <div className="new">
-                    <h5>New</h5>
-                    <p>Confirmed: {newCases.confirmed}</p>
-                    <p>Deaths: {newCases.deaths}</p>
-                    <p>Recovered: {newCases.recovered}</p>
-                </div>
-                <div className="total">
-                    <h5>Total</h5>
-                    <p>Confirmed: {totalCases.confirmed}</p>
-                    <p>Deaths: {totalCases.deaths}</p>
-                    <p>Recovered: {totalCases.recovered}</p>
-                </div>
-            </div>
-        );
+        content = (<MapModalContent totalCases={totalCases} newCases={newCases} />);
     }
 
     return (
         <>
             <Modal
+                size={"lg"}
                 dismissible
                 show={showModal}
                 onClose={() => setOpenModal(false)}
