@@ -94,7 +94,7 @@ const CountriesTable = ({ data }) => {
   });
 
   return (
-    <div className=" px-5 py-0 overflow-scroll">
+    <div className="bg-[white] m-5 p-[30px] rounded-[5px] px-5 py-0 ">
       <div className="px-5 py-[15px] border-b-[rgba(0,0,0,0.12)] border-b border-solid">
         <h2 className="font-poppins font-normal text-[22px] leading-[1.2] text-dark-blue-1 mb-0">
           Ajax Data Table - Covid-19 Country Wise State
@@ -128,37 +128,47 @@ const CountriesTable = ({ data }) => {
           />
         </div>
       </div>
-      <table className="font-poppins font-light text-left border-collapse w-full">
-        <thead className=" text-dark-blue-1">
-          {table.getHeaderGroups().map((headerGroup) => (
-            <tr key={headerGroup.id}>
-              {headerGroup.headers.map((header) => (
-                <th
-                  key={header.id}
-                  onClick={header.column.getToggleSortingHandler()}
-                >
-                  {flexRender(
-                    header.column.columnDef.header,
-                    header.getContext()
-                  )}
-                  {{ asc: "↑", desc: "↓" }[header.column.getIsSorted() ?? null]}
-                </th>
-              ))}
-            </tr>
-          ))}
-        </thead>
-        <tbody className=" text-purple-blue">
-          {table.getRowModel().rows.map((row) => (
-            <tr className=" even:bg-gray-sidebar border-b-[#ccc] border-b border-solid font-poppins font-normal" key={row.id}>
-              {row.getVisibleCells().map((cell) => (
-                <td className="px-2.5 py-2" key={cell.id}>
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="overflow-x-scroll overflow-y-hidden">
+        <table className="font-poppins font-light text-left border-collapse w-full">
+          <thead className=" text-dark-blue-1">
+            {table.getHeaderGroups().map((headerGroup) => (
+              <tr key={headerGroup.id}>
+                {headerGroup.headers.map((header) => (
+                  <th
+                    key={header.id}
+                    onClick={header.column.getToggleSortingHandler()}
+                  >
+                    {flexRender(
+                      header.column.columnDef.header,
+                      header.getContext()
+                    )}
+                    {
+                      { asc: "↑", desc: "↓" }[
+                        header.column.getIsSorted() ?? null
+                      ]
+                    }
+                  </th>
+                ))}
+              </tr>
+            ))}
+          </thead>
+          <tbody className=" text-purple-blue">
+            {table.getRowModel().rows.map((row) => (
+              <tr
+                className=" even:bg-gray-sidebar border-b-[#ccc] border-b border-solid font-poppins  font-weight"
+                key={row.id}
+              >
+                {row.getVisibleCells().map((cell) => (
+                  <td className="px-2.5 py-2" key={cell.id}>
+                    {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
       <div className="flex flex-col items-center md:flex-row justify-between px-[0.8rem] py-5 font-poppins font-light">
         <div className="">
           Showing {table.getState().pagination.pageIndex + 1} to{" "}
