@@ -9,7 +9,7 @@ const Tracker3 = () => {
         TopCases: country.cases,
         TodayCases: country.todayCases,
         TodayDeaths: country.todayDeaths,
-        TodayDeaths: country.todayDeaths,
+        TodayDeathsInverted: country.todayDeaths,
         TopActive: country.active,
         TopRecover: country.recovered,
     }));
