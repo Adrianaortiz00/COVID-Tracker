@@ -218,4 +218,10 @@ function DebouncedInput({
   );
 }
 
+DebouncedInput.propTypes = {
+  value: PropTypes.string,
+  onChange: PropTypes.function,
+  debounce: PropTypes.number,
+};
+
 export default CountriesTable;
