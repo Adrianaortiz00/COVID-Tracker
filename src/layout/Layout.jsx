@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />
       <main>
         <Outlet />

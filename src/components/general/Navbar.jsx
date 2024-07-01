@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="font-poppins font-medium bg-white fixed w-full top-0">
+    <nav className="font-poppins font-medium bg-white fixed w-full top-0 z-20">
       <div className="flex flex-wrap items-center gap-6 md:gap-0 md:justify-evenly mx-auto p-4">
         <img src={logo} alt="Logo" />
 
