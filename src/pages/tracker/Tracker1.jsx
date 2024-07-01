@@ -34,12 +34,12 @@ const Tracker1 = () => {
     });
 
     return (
-        <article className="p-5 text-gray-dark flex-1">
-            <section className="select-section flex flex-wrap justify-center md:justify-between items-center mb-8 pb-4 border-gray-light border-b">
+        <article className="p-3 md:p-5 text-gray-dark flex-1">
+            <section className="select-section flex flex-wrap flex-col md:flex-row justify-center md:justify-between items-center mb-8 pb-4 border-gray-light border-b">
                 <SelectCountry onChange={handleCountryChange} />
                 <p className="font-medium mt-5 md:mt-0">Updated: {updateDate}</p>
             </section>
-            <section className="center-section md:grid md:grid-cols-2 md:gap-9 items-start">
+            <section className="center-section grid xl:grid-cols-2 gap-2 md:gap-9 items-start">
                 <CardGroup country={selectedCountry} columns={'grid-cols-2'}/>
                 <MapBox />
             </section>

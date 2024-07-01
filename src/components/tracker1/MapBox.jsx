@@ -12,7 +12,7 @@ const MapBox = () => {
     }
 
     return (
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full flex flex-col items-center relative">
             <h5
                 className={
                     content == ""

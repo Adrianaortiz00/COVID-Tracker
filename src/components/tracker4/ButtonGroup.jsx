@@ -31,7 +31,7 @@ const ButtonGroup = ({ onClick, onDataLoad }) => {
   }
   
   return (
-    <div className='flex flex-wrap gap-3 mb-10'> 
+    <div className='flex flex-wrap gap-3 mb-10 justify-evenly md:justify-normal'> 
       {
         data?.slice(0, 10).map((country, index) => (
           <CountryButton  
