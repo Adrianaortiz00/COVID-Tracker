@@ -3,7 +3,7 @@ import SidebarIcons from "./SidebarIcons";
 
 const Sidebar = () => {
     return (
-        <div className="flex flex-col items-center w-[6em] h-screen md:h-screen gap-1 bg-gray-sidebar border-solid border-purple-blue">
+        <div className="flex flex-col items-center w-[50px] md:w-[6em] h-screen md:h-screen gap-1 bg-gray-sidebar border-solid border-purple-blue">
             <Link to="/">
                 <img className="w-11 mt-4 mb-4 animate-spin-slow " src="\assets\images\coronavirus.png" alt="logo" />
             </Link>
