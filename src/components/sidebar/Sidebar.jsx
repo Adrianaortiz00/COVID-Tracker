@@ -13,7 +13,9 @@ const Sidebar = () => {
             <Link to="/tracker/tracker2">
                 <SidebarIcons iconSB="ti-view-list" />
             </Link>
+            <Link to="/tracker/tracker3">
             <SidebarIcons iconSB="ti-layout-grid2" />
+            </Link>
             <Link to="/tracker/tracker4">
                 <SidebarIcons iconSB="ti-layout-tab" />
             </Link>
