@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Modal, Spinner } from "flowbite-react";
 import { PropTypes } from "prop-types";
 import useApi from "../../services/useApi";
@@ -33,13 +33,11 @@ const MapModal = ({ openModal, setOpenModal, country }) => {
     };
 
     if (!data) {
-        content = (
-            <>
-                <div className="space-y-6 error">
-                    <h5>Sorry, we do not have {countryName} records.</h5>
-                </div>
-            </>
-        );
+
+        content = 
+        (<><div className="space-y-6 error">
+            <h5>Sorry, we don&apos;t have {countryName} records.</h5>
+        </div></>)
     } else {
         const newCases = {
             confirmed: data.todayCases,

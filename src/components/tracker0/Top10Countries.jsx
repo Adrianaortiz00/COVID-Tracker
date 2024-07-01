@@ -1,6 +1,7 @@
 import { API_BASE_URL_COUNTRIES } from "../../config/urls";
 import useApi from "../../services/useApi";
 import CardTop10Country from "./CardTop10Country";
+import { getTopCountries } from "./utils/dataUtils";
 
 const Top10Countries = () => {
   const data = useApi(API_BASE_URL_COUNTRIES);
@@ -8,8 +9,7 @@ const Top10Countries = () => {
 
   if (!data) return null;
 
-  const topCountries = data.sort((a, b) => b.cases - a.cases).slice(0, 10);
-  console.log(topCountries);
+  const topCountries = getTopCountries(data);
 
   return (
     <div>
