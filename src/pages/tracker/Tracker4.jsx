@@ -42,7 +42,7 @@ const Tracker4 = () => {
                     onClick={handleCountryChange}
                     onDataLoad={handleDataLoad}
                 />
-                <CardGroup country={selectedCountry} columns="grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5" />
+                <CardGroup country={selectedCountry} columns="grid-cols-2 lg:grid-cols-3 min-[1460px]:grid-cols-4 min-[1900px]:grid-cols-5" />
             </section>
         </article>
     );
