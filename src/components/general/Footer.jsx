@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex flex-wrap -mx-4">
             <div className="w-full sm:w-2/3 lg:w-1/3 px-4">
               <div className="bottom-logo">
-                <img className="pb-3" src="public/assets/images/logo-white.png" alt="logo-coronavirus" />
+                <img className="pb-3" src="/assets/images/logo-white.png" alt="logo-coronavirus" />
                 <p className="mr-10 mb-4 pr-8 leading-8 ">
                   These droplets can land on objects and surfaces around the person such as tables, doorknobs and handrails.
                 </p>
