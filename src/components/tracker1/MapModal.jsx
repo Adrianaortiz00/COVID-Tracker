@@ -11,7 +11,6 @@ const MapModal = ({ openModal, setOpenModal, country }) => {
     const data = useApi(`${API_BASE_URL_COUNTRIES}${countryName}`);
     const [showModal, setShowModal] = useState(false);
     const [showSpinner, setShowSpinner] = useState(false);
-    const opacityRef = useRef(null);
 
     let content = "";
     useEffect(() => {
@@ -26,11 +25,6 @@ const MapModal = ({ openModal, setOpenModal, country }) => {
             setShowModal(false);
         }
     }, [openModal]);
-    const toggleModal = () => {
-        if (opacityRef.current.classList.contains("modal-open"))
-            opacityRef.current.classList.remove("modal-open");
-        else opacityRef.current.classList.add("modal-open");
-    };
 
     if (!data) {
 
@@ -56,9 +50,6 @@ const MapModal = ({ openModal, setOpenModal, country }) => {
 
     return (
         <>
-            <div className="modal" ref={opacityRef} onClick={toggleModal}>
-                <div className="loader"></div>
-            </div>
             <Modal
                 size={"lg"}
                 dismissible
