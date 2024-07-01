@@ -9,7 +9,7 @@ const CardVirus = ({data, color}) => {
         <h5 className="font-medium text-[0.938rem] lg:text-[1.125rem] px-5 py-3 border-b border-gray-super-light capitalize">{data.label}</h5>
       </div>
       <div className="data bg-transparent">
-        <h3 className={`font-semibold px-5 pt-1 pb-2 text-[1.875rem] md:text-[2em] break-words ${colorVariants[color]}`}>{data.value}</h3>
+        <h3 className={`font-semibold px-5 pt-1 pb-2 text-[1.5rem] sm:text-[1.8rem] md:text-[2em] break-words ${colorVariants[color]}`}>{data.value}</h3>
       </div>
       <div className="background icon-container absolute top-[-1.875rem] right-[-1.875rem] w-[8.75rem] opacity-10">
           <img className="icon group-hover:animate-spin-slow" src={`/assets/images/icons/covid-${color}.svg`} alt="COVID-19 Icon" />
