@@ -52,7 +52,7 @@ El diseño de la interfaz ha sido proporcionado por la empresa, por lo que en es
 
 1. Clona el repositorio:
     ```bash
-    git clone https://github.com/BettyLopo/Google-Store-React.git
+    git clone [https://github.com/Adrianaortiz00/COVID-Tracker.git]
     ```
 2. Navega al directorio del proyecto:
     ```bash
