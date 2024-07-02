@@ -5,7 +5,6 @@ import Faq from "../home/sections/Faq"
 import MetricsSection from "../home/sections/MetricsSection";
 import GetSimple from "./sections/GetSimple";
 import Blog from "./sections/Blog";
-import Footer from "../../components/general/Footer";
 import CardSponsors from "./sections/CardSponsors";
 
 
@@ -20,7 +19,6 @@ const Home = () => {
       <Faq/>
       <GetSimple/>
       <Blog/>
-      <Footer/>
     </div>
   );
 };
